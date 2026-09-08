@@ -7,8 +7,8 @@ timezone: Asia/Seoul
 
 # 사이트 기본 정보
 title: Best Temp in Chiswick
-tagline: Bits and Bob of the Life
-description: Bits and Bob of the Life - A personal archive and blog.
+tagline: Bits and Bobs of the Life
+description: Bits and Bobs of the Life
 
 # 배포 주소 (필수)
 url: 'https://besttempinchiswick.github.io'
