@@ -18,7 +18,7 @@ title: Best Temp in Chiswick # the main title
 
 tagline: A text-focused Jekyll theme # it will display as the subtitle
 
-description: Bits and Bob of the Life >- # used by seo meta and the atom feed
+description: Bits and Bob of the Life # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
 
 # Fill in the protocol & hostname for your site.
