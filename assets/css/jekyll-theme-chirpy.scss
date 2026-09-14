@@ -2,7 +2,9 @@
 ---
 
 @use 'abstracts/variables' with (
-  $theme: '{{ site.theme_mode }}'
+  $theme: '{{ site.theme_mode }}',
+  $font-family-base: (Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif),
+  $font-family-heading: (Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif)
 );
 
 /* prettier-ignore */
