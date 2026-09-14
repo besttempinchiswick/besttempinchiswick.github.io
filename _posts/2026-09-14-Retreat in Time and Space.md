@@ -3,7 +3,6 @@ title: "Retreat in Time and Space"
 date: 2026-09-14
 categories: ["Retreat in Time & Space"]
 tags: [sanctuaries, intro]
-pin: true
 image:
   path: /assets/img/sanctuaries/IMG_7912.JPG
   alt: sanctuaries

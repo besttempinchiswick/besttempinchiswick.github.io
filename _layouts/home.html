@@ -66,6 +66,7 @@ layout: default
 
       <a href="{{ post.url | relative_url }}" class="thumb-tile" aria-label="{{ post.title }}">
         <img src="{{ src }}" alt="{{ alt }}" loading="lazy">
+        <span class="thumb-title">{{ post.title }}</span>
       </a>
     {% endif %}
   {% endfor %}
