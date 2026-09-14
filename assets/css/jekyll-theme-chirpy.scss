@@ -26,6 +26,18 @@ article > header figcaption {
   display: none;
 }
 
+/* show the post cover image in full instead of cropping it to a 40:21 box */
+article > header .preview-img {
+  aspect-ratio: auto;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
 #post-list.thumb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
