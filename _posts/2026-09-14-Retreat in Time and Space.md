@@ -1,7 +1,7 @@
 ---
 title: "Retreat in Time and Space"
 date: 2026-09-14
-categories: ["Retreat in Time & Space"]
+categories: ["Spiritual Journeys"]
 tags: [sanctuaries, intro]
 image:
   path: /assets/img/sanctuaries/IMG_7912.JPG
