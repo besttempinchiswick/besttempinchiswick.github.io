@@ -38,6 +38,17 @@ article > header .preview-img {
   }
 }
 
+/* tab page titles (Categories, Tags, Archives, About): smaller and uppercase */
+h1.dynamic-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* sidebar site title: all caps */
+.site-title {
+  text-transform: uppercase;
+}
+
 #post-list.thumb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
