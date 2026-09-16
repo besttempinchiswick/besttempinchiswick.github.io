@@ -26,6 +26,11 @@ article > header figcaption {
   display: none;
 }
 
+/* post body text: one size down from the theme default (1.08rem / 1.03rem on xl) */
+article > .content {
+  font-size: 0.95rem;
+}
+
 /* show the post cover image in full instead of cropping it to a 40:21 box,
    and cap the height so tall/portrait images don't dominate the page */
 article > header .preview-img {
