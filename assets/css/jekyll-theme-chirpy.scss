@@ -5,7 +5,7 @@
   $theme: '{{ site.theme_mode }}',
   $font-family-base: (Arial, Helvetica, sans-serif),
   $font-family-heading: (Arial, Helvetica, sans-serif),
-  $sidebar-width: 300px
+  $sidebar-width: 340px
 );
 
 /* prettier-ignore */
@@ -109,10 +109,11 @@ h1.dynamic-title {
   text-transform: uppercase;
 }
 
-/* sidebar site title: all caps, one size down from the theme default (1.75rem) */
-.site-title {
+/* sidebar site title: all caps, one size down from the theme default (1.75rem)
+   (matches the theme's own #sidebar .site-title specificity) */
+#sidebar .site-title {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 /* strip the boxed button look from the older/newer post nav, keep plain text links */
