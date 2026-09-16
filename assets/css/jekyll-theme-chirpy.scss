@@ -21,11 +21,11 @@
    container is made transparent so the photo shows through evenly
    everywhere (not just in the gaps between containers). */
 :root {
-  --overlay-tint: rgb(255 255 255 / 43%);
+  --overlay-tint: rgb(255 255 255 / 35%);
 }
 
 html[data-bs-theme='dark'] {
-  --overlay-tint: rgb(27 27 30 / 43%);
+  --overlay-tint: rgb(27 27 30 / 35%);
 }
 
 /* softer, seamless tag border instead of the theme's fixed blue-gray
@@ -42,7 +42,7 @@ body::before {
   z-index: -1;
   background:
     linear-gradient(var(--overlay-tint), var(--overlay-tint)),
-    url('/assets/img/bg-street.jpg') center center / cover no-repeat;
+    url('/assets/img/bg-street.jpg') center 65% / cover no-repeat;
   filter: blur(10px);
 }
 
