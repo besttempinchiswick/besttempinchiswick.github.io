@@ -56,10 +56,12 @@ footer {
   background: transparent !important;
 }
 
-/* categories list: blend with the background, border matches the tag style */
+/* categories list: blend with the background, border matches the tag style,
+   half the gap between each top-level category box */
 .categories.card {
   background: transparent !important;
   border-color: var(--tag-border) !important;
+  margin-bottom: 1rem !important;
 
   .card-header,
   .list-group-item {
@@ -94,10 +96,11 @@ article > header h1 {
   font-size: 0.875rem;
 }
 
-/* single-category page title (e.g. "From Left to Right"): two sizes down, uppercase, no bold */
+/* single-category page title (e.g. "From Left to Right"): same look as the
+   Categories/Tags/Archives/About tab titles */
 #page-category h1 {
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
