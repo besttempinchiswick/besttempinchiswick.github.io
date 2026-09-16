@@ -5,7 +5,8 @@
   $theme: '{{ site.theme_mode }}',
   $font-family-base: (Arial, Helvetica, sans-serif),
   $font-family-heading: (Arial, Helvetica, sans-serif),
-  $sidebar-width: 340px
+  $sidebar-width: 340px,
+  $sidebar-width-large: 360px
 );
 
 /* prettier-ignore */
