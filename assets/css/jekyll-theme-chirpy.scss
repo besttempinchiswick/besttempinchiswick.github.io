@@ -140,6 +140,10 @@ h1.dynamic-title {
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 12px;
 
+  > article {
+    display: contents;
+  }
+
   .thumb-tile {
     display: block;
     position: relative;

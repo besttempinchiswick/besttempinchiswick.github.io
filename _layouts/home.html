@@ -64,10 +64,12 @@ layout: default
 
       {% assign alt = post.image.alt | xml_escape | default: post.title %}
 
-      <a href="{{ post.url | relative_url }}" class="thumb-tile" aria-label="{{ post.title }}">
-        <img src="{{ src }}" alt="{{ alt }}" loading="lazy">
-        <span class="thumb-title">{{ post.title }}</span>
-      </a>
+      <article>
+        <a href="{{ post.url | relative_url }}" class="thumb-tile" aria-label="{{ post.title }}">
+          <img src="{{ src }}" alt="{{ alt }}" loading="lazy">
+          <span class="thumb-title">{{ post.title }}</span>
+        </a>
+      </article>
     {% endif %}
   {% endfor %}
 </div>
