@@ -94,9 +94,11 @@ article > header h1 {
   font-size: 0.875rem;
 }
 
-/* single-category page title (e.g. "From Left to Right"): one size down */
+/* single-category page title (e.g. "From Left to Right"): two sizes down, uppercase, no bold */
 #page-category h1 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 /* show the post cover image in full instead of cropping it to a 40:21 box,
