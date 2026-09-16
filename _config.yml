@@ -26,6 +26,9 @@ social:
 # 목차(TOC) 표시
 toc: true
 
+# 다크모드 토글 비활성화, 라이트 모드로 고정 (임시)
+theme_mode: light
+
 # PWA (웹앱 설치 기능)
 pwa:
   enabled: true

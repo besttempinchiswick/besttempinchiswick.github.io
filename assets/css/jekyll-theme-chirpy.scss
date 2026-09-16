@@ -15,6 +15,57 @@
 ';
 
 /* append your custom style below */
+
+/* site-wide blurred background photo, fixed behind every page.
+   The tint is baked into the fixed layer itself, and every layout
+   container is made transparent so the photo shows through evenly
+   everywhere (not just in the gaps between containers). */
+:root {
+  --overlay-tint: rgb(255 255 255 / 43%);
+}
+
+html[data-bs-theme='dark'] {
+  --overlay-tint: rgb(27 27 30 / 43%);
+}
+
+/* softer, seamless tag border instead of the theme's fixed blue-gray
+   (matches the theme's own :root[data-bs-theme='dark'] specificity) */
+:root[data-bs-theme='dark'] {
+  --btn-border-color: rgb(255 255 255 / 15%);
+  --tag-border: rgb(255 255 255 / 15%);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: -20px;
+  z-index: -1;
+  background:
+    linear-gradient(var(--overlay-tint), var(--overlay-tint)),
+    url('/assets/img/bg-street.jpg') center center / cover no-repeat;
+  filter: blur(10px);
+}
+
+body,
+#sidebar,
+#main-wrapper,
+#topbar-wrapper,
+footer {
+  background: transparent !important;
+}
+
+/* categories list: blend with the background, border matches the tag style */
+.categories.card {
+  background: transparent !important;
+  border-color: var(--tag-border) !important;
+
+  .card-header,
+  .list-group-item {
+    background: transparent !important;
+    border-color: var(--tag-border) !important;
+  }
+}
+
 #avatar img {
   width: 100%;
   height: 100%;
