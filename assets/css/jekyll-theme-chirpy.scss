@@ -30,6 +30,15 @@ html[data-bs-theme='dark'] {
   --overlay-tint: rgb(27 27 30 / 35%);
 }
 
+/* home page shows the photo more clearly; other pages stay dimmer to read on */
+body[data-home] {
+  --overlay-tint: rgb(255 255 255 / 26%);
+}
+
+html[data-bs-theme='dark'] body[data-home] {
+  --overlay-tint: rgb(27 27 30 / 26%);
+}
+
 /* softer, seamless tag border instead of the theme's fixed blue-gray
    (matches the theme's own :root[data-bs-theme='dark'] specificity) */
 :root[data-bs-theme='dark'] {
