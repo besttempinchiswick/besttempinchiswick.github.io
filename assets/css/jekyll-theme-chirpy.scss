@@ -57,6 +57,28 @@ h1.dynamic-title {
   text-transform: uppercase;
 }
 
+/* strip the boxed button look from the older/newer post nav, keep plain text links */
+.post-navigation {
+  margin-top: 1rem !important;
+
+  .btn {
+    border: none;
+    background: none !important;
+    padding: 0;
+    border-radius: 0;
+
+    &:first-child,
+    &:last-child {
+      left: auto;
+      right: auto;
+    }
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+}
+
 #post-list.thumb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
